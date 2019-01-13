@@ -31,23 +31,22 @@ public class UserApiController implements UserApi {
 
 
     public ResponseEntity<Void> addUser(@ApiParam(value = "" ,required=true )  @Valid @RequestBody User user) {
+        System.out.println(user);
         return new ResponseEntity<Void>(HttpStatus.NOT_IMPLEMENTED);
     }
 
     public ResponseEntity<Void> deleteUserById(@ApiParam(value = "",required=true) @PathVariable("id") Integer id) {
-
+        System.out.println(id);
         return new ResponseEntity<Void>(HttpStatus.NOT_IMPLEMENTED);
     }
 
     public ResponseEntity<User> getUserById(@ApiParam(value = "",required=true) @PathVariable("id") Integer id) {
-
-
-
+        System.out.println(id);
         return new ResponseEntity<User>(HttpStatus.NOT_IMPLEMENTED);
     }
 
     public ResponseEntity<Void> userPut(@ApiParam(value = "" ,required=true )  @Valid @RequestBody User user) {
-
+        System.out.println(user);
         return new ResponseEntity<Void>(HttpStatus.NOT_IMPLEMENTED);
     }
 
